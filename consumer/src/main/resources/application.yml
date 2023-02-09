@@ -1,3 +1,14 @@
 logging:
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
+
+spring:
+  rabbitmq:
+    host: 192.168.188.201
+    port: 5672
+    username: yutian
+    password: 123456
+    virtual-host: /
+    listener:
+      simple:
+        prefetch: 1
